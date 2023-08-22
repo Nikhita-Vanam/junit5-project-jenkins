@@ -27,6 +27,8 @@ class PersonTest {
     @Test
     void getAdharCardInvalidData() {
          assertNotEquals(12346789012L,person.getAdharCard());
+        assertNotEquals(12346789013L,person.getAdharCard());
+        assertNotEquals(12446789012L,person.getAdharCard());
     }
 
     @Test
